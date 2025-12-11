@@ -3,6 +3,11 @@
 
 This repository is the central home for Syneroym’s vision, conceptual groundwork, design principles, RFCs, and long-term architectural decisions and other items. It exists to keep the project’s intent, philosophy, and technical direction aligned as the ecosystem grows.
 
+## 🧭 Quick Links
+
+- **ChatGPT and LLM related files:** `llm/`
+
+
 <!--
 
 If you're new here, start by understanding the ideas, then explore the proposals and decisions that shape the system.
