@@ -1,4 +1,4 @@
-# Syneroym Foundation
+# Foundational Material
 
 This repository is the central home for Syneroym’s vision, conceptual groundwork, design principles, RFCs, and long-term architectural decisions. It exists to keep the project’s intent, philosophy, and technical direction aligned as the ecosystem grows.
 
