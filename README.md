@@ -1,7 +1,7 @@
 # Syneroym foundational documents
 
 
-This repository is the central home for Syneroym’s vision, conceptual groundwork, design principles, RFCs, and long-term architectural decisions and others. It exists to keep the project’s intent, philosophy, and technical direction aligned as the ecosystem grows.
+This repository is the central home for Syneroym’s vision, conceptual groundwork, design principles, RFCs, and long-term architectural decisions and other items. It exists to keep the project’s intent, philosophy, and technical direction aligned as the ecosystem grows.
 
 <!--
 
