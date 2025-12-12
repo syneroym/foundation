@@ -1,0 +1,36 @@
+Feature	"Design, Technology Pointers"	Pointers	Component				
+Superapp	"ReactNative, Flutter, Capacitor?"	Bluesky	Superapp wrapper				
+P2P communication between Superapps	Iroh	Iroh	Superapp infra				
+Installing/Removing/Start/Stop mini-app (or micro-app or plugin/extension?) on peer	Multiple logins for same super install or single? Who has perms to install mini-apps?	Wechat	Superapp infra				
+Sandboxed mini-app backend	"WASM + WASI with Wasmtime, Quota limits"	"Freenet, Wasmtime Docs"	Superapp infra				
+Mini-app frontend	HTML/CSS/JS web app that runs in web view and/or browser	WeChat mini-apps	Superapp infra				
+"Manage special community service infra peers (relays, DHT, SFU, Index, etc.)"	"Common (custom?) mechanism to elect nodes with special common responsibilities, rotate responsibility, scale up-down"	??	Superapp infra				
+Special services (mini-app?): Relay	Relay traffic where peer behind NAT cannot be hole-punched.	Iroh	Special Superapp infra				
+Special services: media streaming mini-app backbone	SFUs for WebRTC calls with large number of participants. Use Media over Quic?	"Webrtc-rs/sfu, moq-dev, peertube"	Special Superapp infra				
+Peer partition metadata store and search	Kademlia in Rust-libp2p or libp2p-kad for storage. DHT aware client libraries. Used for indexing and more.	Google	Special Superapp infra				
+Distributed search with fulltext	"Tantivity, Surrealdb? Supported by DHT metadata for index partition identification"	Google	Special Superapp infra				
+Mini-app common backend API	"Static Files, Generic REST CRUD API for most common backend needs. Consider ATProto ideas"	Axum	Superapp infra				
+Mini-app API local data storage SDK	Mini-apps can call host SDK for storage/retrieval through wasm runtime. Storage in redb (or sqlite-rs?)	"Freenet, Wasmtime Docs"	Superapp infra				
+Mini-app cross-service communication	"REST API by host, persistent message queue"	"Wasmtime native calls, yaque?"	Superapp infra				
+RBAC/ABAC support for mini-apps and system	"RBAC and ABAC. Through capability tokens, Casbin like specs. Configure on the fly, varying levels of grain. Delegation needed? (This is big, easy to get it wrong)."	Casbin-rs	Superapp infra				
+Metering	"API call logging and analytics, resource utilisation measurement by app backends, central services. (Thread, memory usage using OS/Platform SDK?)"	Otel-rs?	Superapp infra				
+Observability	"At various levels, using metered information. Aggregation of metrics for varying granularity views with proper access control. Log sharing, indexing, Alerts"	"Otel, Graphana, Graylog"	Superapp infra				
+P2p Video calling	WebRTC with turn-rs (or cotton?)	Google	Signalling STUN-Turn				
+Mini-app should run independently or within mini-app with minimal effort 	Conventions. E.g. Wrapper libraries instead of direct axios or fetch calls. More		Mini-app compatibility				
+Transferable computation?	"Computation could be migrated across peer nodes or self (or browser). Say, composable-transferable components of aggregation layer in microservice calls. Research (Towards Modern Development of Cloud Applications-Google, Ghemawat)"	Research	Superapp infra				
+Secure communication	"Various TLS, Crypto, Signing mechanisms (which ones exactly?) at different layers. No visibility to Relays too"	"Freenet, Iroh"	Superapp infra				
+Secure storage	Encrypted storage. Keys per app? How?	SQLCipher	Public Cloud				
+Replication/Redundancy	Passive data replication	Master-slave in sqlite	Public Cloud				
+Install mini-app microservices on different peers	"Peers offering resources to mini-app backends (public cloud). Shards of same service, as well as different services on peers signed to host service. Distribution mechanism"	"Kubernetes, SQLite sharding"	Public Cloud				
+Publish/Subscribe support	Apps publishing events and subscribing to them. Need to plug in selectivity (source/target end?)	"Redis, Kafka, yaque?"	Superapp infra				
+Chat	"With, without app context. Need text, voice, video.  This is a full mini-app"	matrix-p2p	Core chat app				
+Social media features	"Groups, Threads like discussion forums. ATProto type APIs? This is full mini-app"	Facebook	Core social media app				
+Ecommerce features	"List, Index, buy sell, search for products/services, workflows for various products/services like ONDC, rewards, payments leveraging the pluggable payments model  in infra. This is a big app. Think through"	"Amazon, ONDC"	Core ecommerce app				
+Pluggable compensation model	"Compensation for various components involved. (E.g. token, credit, IOU, fiat, Zero total currency something like Keynes Bancor proposal). List transactions"	??	Compensation models				
+Mini-App Store	"List mini apps on p2p app store (special service node), mini-app stored anywhere (GitHub, etc). Signature verification (or GitHub SHAs). Others?"	"Apple App Store, Telegram mini-apps"	Mini-App ecosystem				
+Mini-app test environment	"Allow sandbox for mini-app testing. Or guidelines, tools. What, how?"	??	Mini-App ecosystem				
+Mini-app versioning and updates	"Support version upgrades, migration strategy, common API/tools pertaining to deployment within super app. Details? "	"Django migration, K8s API versioning"	Mini-App ecosystem				
+							
+							
+Questions							
+Special services == Mini-app == plugins?							
