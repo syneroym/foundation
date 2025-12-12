@@ -4,6 +4,7 @@ P2P communication between Superapps	Iroh	Iroh	Superapp infra
 Installing/Removing/Start/Stop mini-app (or micro-app or plugin/extension?) on peer	Multiple logins for same super install or single? Who has perms to install mini-apps?	Wechat	Superapp infra				
 Sandboxed mini-app backend	"WASM + WASI with Wasmtime, Quota limits"	"Freenet, Wasmtime Docs"	Superapp infra				
 Mini-app frontend	HTML/CSS/JS web app that runs in web view and/or browser	WeChat mini-apps	Superapp infra				
+Connected/dependent mini-apps?	Mini-apps needing other mini-apps installed?	??	Superapp infra				
 "Manage special community service infra peers (relays, DHT, SFU, Index, etc.)"	"Common (custom?) mechanism to elect nodes with special common responsibilities, rotate responsibility, scale up-down"	??	Superapp infra				
 Special services (mini-app?): Relay	Relay traffic where peer behind NAT cannot be hole-punched.	Iroh	Special Superapp infra				
 Special services: media streaming mini-app backbone	SFUs for WebRTC calls with large number of participants. Use Media over Quic?	"Webrtc-rs/sfu, moq-dev, peertube"	Special Superapp infra				
