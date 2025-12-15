@@ -35,6 +35,7 @@ Mini-app test environment	"Allow sandbox for mini-app testing. Or guidelines, to
 Connected/dependent mini-apps?	Mini-apps needing other mini-apps installed?		Mini-App ecosystem				
 Chat	"With, without app context. Need text, voice, video.  This is a full mini-app"	matrix-p2p	Core chat app				
 Social media features	"Groups, Threads like discussion forums. ATProto type APIs? This is full mini-app"	Facebook	Core social media app				
+Music App	IOS closes apps if not being used	Spotify?	Core music app				
 Ecommerce features	"List, Index, buy sell, search for products/services, workflows for various products/services like ONDC, rewards, payments leveraging the pluggable payments model  in infra, include logistics. Advertising and rating without existing drawbacks. This is a big app. Think through"	"Amazon, ONDC"	Core ecommerce app				
 Computation migration on the fly?	"Computation could be migrated across peer nodes or self (or browser). Say, composable-transferable components (WASM?) of aggregation layer in microservice calls. Research (Towards Modern Development of Cloud Applications-Google, Ghemawat)."	Research	Research - Superapp infra				
 							

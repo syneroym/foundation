@@ -5,9 +5,11 @@ These are general developer guidelines. There could be per-repo guidelines as we
 - Low overhead communication channel with other project stakeholders: matrix, slack as applicable.
 
 # Dev tools to install on typical dev machine
-- IDE: VSCode with key plugins like `gitlens`
+- IDE: VSCode with needed plugins. Common ones for toml, gitlens, mise, are useful.
 - Repository: git, gpg keychain for commit signing
-- Build target orchestration: Just 
+- Project environment setup: mise (like asdf)
+- Build target orchestration: mise (like just or make)
+- File watch to trigger tasks: mise (like entr)
 - Build: Repo specific, e.g. cargo, gradle, make
 - Shell accelerators: Warp or iterm terminal, Zsh extensions
 - CI: CI commandline tools e.g. `gh` commandline for github actions
