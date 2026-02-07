@@ -105,6 +105,16 @@ The following invariants are mandatory and define the system’s intent.
 - Functional differentiation arises from **capability gating**, not from
   distinct binaries or system roles.
 
+### 2.8 Topology Composition
+
+- The system **MUST support composition of multiple heterogeneous network
+  topologies**, including meshes, stars, and overlays.
+- Topologies **MAY be layered or bridged** by participating peers without
+  centralized coordination.
+- No topology is primary or authoritative.
+- Failure, partition, or compromise of one topology **MUST NOT invalidate
+  operation over others**.
+  
 ---
 
 ## 3. Core Principles
