@@ -1,4 +1,4 @@
-# Long Term Vision: The Agent-Addressable Local Economy
+# Mid Term Vision: The Agent-Addressable Local Economy
 
 ## The Shift in Positioning
 
